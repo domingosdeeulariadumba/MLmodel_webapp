@@ -46,6 +46,8 @@ rating_input = gd.Number(label = "Enter the Rating")
 Price = gd.Number()
 
 
+# setting up the web app entries
+
 webapp = gd.Interface(fn = estimate, inputs = [brand_input, product_input,
                                             processortype_input, 
                                             processorcore_input, 
@@ -54,5 +56,8 @@ webapp = gd.Interface(fn = estimate, inputs = [brand_input, product_input,
                                             ssdstorage_input, display_input, 
                                             warranty_input, rating_input], outputs = Price)
 
+# Deploying the model
 webapp.launch(share = 'True')
+
+________________________________________________________END____________________________________________________________________________
 
