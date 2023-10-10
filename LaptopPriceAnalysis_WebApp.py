@@ -37,7 +37,7 @@ ram_input = gd.Number(label = "Enter the RAM")
 opsys_input = gd.Textbox(label = "Enter the Operating System")
 hddstorage_input = gd.Number(label = "Enter the HDD Storage")
 ssdstorage_input = gd.Number(label = "Enter the SSD Storage")
-display_input = gd.Textbox(label = "Enter the SSD Storage")
+display_input = gd.Textbox(label = "Enter the Display")
 warranty_input = gd.Textbox(label = "Enter the Warranty")
 rating_input = gd.Number(label = "Enter the Rating")
 
