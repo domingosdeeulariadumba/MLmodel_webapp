@@ -5,9 +5,13 @@ Created on Tue Oct 10 10:35:41 2023
 @author: domingosdeeulariadumba
 """
 
+# Importing libraries
+
 import gradio as gd
 import joblib
 
+
+# Creating a function by which Gradio will present the predicted price
 
 def estimate(Brand, Product, ProcessorType, ProcessorCore,
                       ProcessorGen, RAM, Opsys, HDD_Storage,
@@ -22,7 +26,7 @@ def estimate(Brand, Product, ProcessorType, ProcessorCore,
 
 
 
-#Create the input component for Gradio since we are expecting 4 inputs
+# Creating inputs for Gradio iterface
 
 brand_input = gd.Textbox(label = "Enter the brand of the laptop")
 product_input = gd.Textbox(label = "Enter the product type")
@@ -38,9 +42,7 @@ warranty_input = gd.Textbox(label = "Enter the Warranty")
 rating_input = gd.Number(label = "Enter the Rating")
 
 
-
-
-# We create the output
+# Defining the output
 Price = gd.Number()
 
 
